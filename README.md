@@ -1,7 +1,11 @@
 # TP1 - Développement d'applications réparties
 
-**Classe :** LSI3
 **Année universitaire :** 2026-2027
+
+**Classe :** LSI3-2-2
+
+## Auteur
+- Tarchi Rihab 
 
 ## Activité 1-1 : Première connexion Client/Serveur
 
@@ -16,18 +20,18 @@ Commande utilisée : java --version
 ### Étape 3 : Création du serveur
 Création de la classe Server dans serverPackage.
 
-![creation de serveur](captures/creation de server.png)
+![creation de serveur](captures/creation_de_server.png)
 
 ### Étape 4 : Création du client
 Création de la classe Client dans clientPackage.
-![creation du client](captures/creation de client.png)
+![creation du client](captures/creation_de_client.png)
 
 
 ### Étape 5 : Test de connexion
 Vérification de la connexion entre le client et le serveur.
 ![Test de connexion](captures/server.png)
 
-![connexion effectue](captures/client.png)
+![Test de connexion](captures/client1.png)
 
 
 ## Activité 1-2 : Service de calculatrice
