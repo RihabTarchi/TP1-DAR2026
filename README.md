@@ -27,7 +27,7 @@ Création de la classe Client dans clientPackage.
 Vérification de la connexion entre le client et le serveur.
 ![Test de connexion](captures/server.png)
 
-![connexion effectué](captures/client.png)
+![connexion effectue](captures/client.png)
 
 
 ## Activité 1-2 : Service de calculatrice
@@ -37,16 +37,20 @@ Le client envoie un entier au serveur.
 Le serveur calcule x * 5 et renvoie le résultat.
 
 ### Tests
-
+![Test de connexion](captures/server2.png)
 
 ## Résultat du calcul
-
+![Test de connexion](captures/client2.png)
 
 
 ## Activité 1-3 : Calculatrice améliorée
 
 ### Connexion entre deux machines
 Configuration de l'adresse IP du serveur.
+![Test de connexion](captures/server3.png)
+![Test de connexion](captures/server3.2.png)
+![Test de connexion](captures/server3.3.png)
+![Test de connexion](captures/server3.4.png)
 
 ### Les quatre opérations
 Addition, soustraction, multiplication et division.

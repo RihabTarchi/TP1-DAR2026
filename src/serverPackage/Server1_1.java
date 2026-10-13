@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.ServerSocket;
 
-public class Server {
+public class Server1_1 {
     static void main(String[] args) throws IOException {
         // 1. Créer la socket d'écoute sur le port 1234
         ServerSocket socketServeur = new ServerSocket(1234);
