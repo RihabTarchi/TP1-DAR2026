@@ -52,9 +52,9 @@ Le serveur calcule x * 5 et renvoie le résultat.
 ### Connexion entre deux machines
 Configuration de l'adresse IP du serveur.
 ![Test de connexion](captures/server3.png)
+![Test de connexion](captures/server3.1.png)
 ![Test de connexion](captures/server3.2.png)
 ![Test de connexion](captures/server3.3.png)
-![Test de connexion](captures/server3.4.png)
 
 ### Les quatre opérations
 Addition, soustraction, multiplication et division.

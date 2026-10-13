@@ -12,12 +12,13 @@ import java.net.Socket;
 /** Serveur TCP : calcule x + 5, x - 5, x * 5 ou x / 5 selon le choix reçu. */
 public class Server1_3 {
     private static final int PORT = 5000;
+
     private static final double CONSTANTE = 5.0;
+    private static final String SERVER_IP = "192.168.1.118";
 
     public static void main(String[] args) {
-        // Pour viser une seule interface, donner l'IP LAN du serveur en argument.
-        // Sans argument, 0.0.0.0 écoute sur toutes les interfaces réseau disponibles.
-        String bindAddress = args.length > 0 ? args[0] : "0.0.0.0";
+        // L'argument permet de remplacer l'adresse par défaut au lancement.
+        String bindAddress = args.length > 0 ? args[0] : SERVER_IP;
 
         try {
             InetAddress serverIp = InetAddress.getByName(bindAddress);
@@ -29,14 +30,17 @@ public class Server1_3 {
                 System.out.println("En attente d'un client...");
 
                 try (Socket clientSocket = serverSocket.accept();
-                     DataInputStream input = new DataInputStream(clientSocket.getInputStream());
-                     DataOutputStream output = new DataOutputStream(clientSocket.getOutputStream())) {
+                     DataInputStream input =
+                             new DataInputStream(clientSocket.getInputStream());
+                     DataOutputStream output =
+                             new DataOutputStream(clientSocket.getOutputStream())) {
 
                     System.out.println("Client connecté depuis "
                             + clientSocket.getInetAddress().getHostAddress());
 
                     while (true) {
                         int operation = input.readInt();
+
                         if (operation == 0) {
                             System.out.println("Le client a demandé l'arrêt.");
                             break;
@@ -44,6 +48,7 @@ public class Server1_3 {
 
                         int x = input.readInt();
                         double result;
+
                         switch (operation) {
                             case 1:
                                 result = x + CONSTANTE;
@@ -59,7 +64,8 @@ public class Server1_3 {
                                 break;
                             default:
                                 output.writeBoolean(false);
-                                output.writeUTF("Choix d'opération invalide : " + operation);
+                                output.writeUTF(
+                                        "Choix d'opération invalide : " + operation);
                                 output.flush();
                                 continue;
                         }
@@ -67,18 +73,22 @@ public class Server1_3 {
                         output.writeBoolean(true);
                         output.writeDouble(result);
                         output.flush();
+
                         System.out.println("Opération " + operation + " sur x=" + x
                                 + " ; résultat=" + result);
                     }
                 }
+
                 System.out.println("Client déconnecté. Sockets fermés.");
             }
         } catch (EOFException e) {
-            System.err.println("Le client a fermé la connexion sans envoyer le choix 0.");
+            System.err.println(
+                    "Le client a fermé la connexion sans envoyer le choix 0.");
         } catch (IOException e) {
             System.err.println("Erreur serveur/réseau : " + e.getMessage());
-            System.err.println("Vérifiez l'adresse IP, le port et le pare-feu.");
+            System.err.println(
+                    "Vérifiez que 192.168.1.118 est bien l'adresse IP de cette machine, "
+                            + "et vérifiez le port et le pare-feu.");
         }
     }
 }
-
