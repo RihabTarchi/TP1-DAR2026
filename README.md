@@ -58,6 +58,12 @@ Configuration de l'adresse IP du Serveur.
 
 Configuration de l'adresse IP du Client .
 
+![Test de connexion](captures/client3.png)
+![Test de connexion](captures/client3_1.png)
+![Test de connexion](captures/client3_2.png)
+![Test de connexion](captures/client3_3.png)
+![Test de connexion](captures/client3_4.png)
+
 
 ### Les quatre opérations
 ### Addition :
