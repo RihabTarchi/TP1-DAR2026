@@ -50,14 +50,23 @@ Le serveur calcule x * 5 et renvoie le résultat.
 ## Activité 1-3 : Calculatrice améliorée
 
 ### Connexion entre deux machines
-Configuration de l'adresse IP du serveur.
+Configuration de l'adresse IP du Serveur.
 ![Test de connexion](captures/server3.png)
-![Test de connexion](captures/server3.1.png)
-![Test de connexion](captures/server3.2.png)
-![Test de connexion](captures/server3.3.png)
+![Test de connexion](captures/server3-1.png)
+![Test de connexion](captures/server3-2.png)
+![Test de connexion](captures/server3-3.png)
+
+Configuration de l'adresse IP du Client .
+
 
 ### Les quatre opérations
-Addition, soustraction, multiplication et division.
-
+### Addition :
+![Test de connexion](captures/addition.png)
+### Soustraction :
+![Test de connexion](captures/soustraction.png)
+### Multiplication  :
+![Test de connexion](captures/multiplication.png)
+### Division :
+![Test de connexion](captures/division.png)
 ## Dépôt GitHub
-Lien du repository : à compléter
+https://github.com/RihabTarchi/TP1-DAR2026
