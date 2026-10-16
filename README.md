@@ -49,6 +49,9 @@ Le serveur calcule x * 5 et renvoie le résultat.
 
 ## Activité 1-3 : Calculatrice améliorée
 
+### Mon adresse IP 
+![Test de connexion](captures/@ip.png)
+
 ### Connexion entre deux machines
 Configuration de l'adresse IP du Serveur.
 ![Test de connexion](captures/server3.png)
